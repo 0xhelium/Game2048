@@ -54,7 +54,7 @@ namespace Game2048
             }
         }
 
-        public void OnKeyUp(Keys keyCode)
+        public void OnKeyDown(Keys keyCode)
         {
             if (!_stepFinished) return;
 

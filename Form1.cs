@@ -41,7 +41,7 @@ namespace Game2048
                 keyCode = Keys.Left;
             if (e.KeyCode == Keys.D)
                 keyCode = Keys.Right;
-            _controller.OnKeyUp(keyCode);
+            _controller.OnKeyDown(keyCode);
         }
 
         private void Container_Paint(object sender, PaintEventArgs e)
