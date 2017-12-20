@@ -28,7 +28,7 @@ namespace Game2048
 
             this.Container.Paint += Container_Paint;            
             this.btnRestart.Click += BtnRestart_Click;
-            this.KeyDown += Form1_KeyUp;
+            this.KeyDown += Form1_KeyDown;
         }
 
         private void BtnRestart_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Game2048
             _controller.Restart();
         }
 
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             var keyCode = e.KeyCode;
             if (e.KeyCode == Keys.W)
